@@ -1,0 +1,274 @@
+*{
+    color: #25282B
+}
+
+
+body{
+    background-color: #F9FAFF;
+    background-image: url('../img/hero-bg.png');
+    background-size: 720px;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+/*TYPOGRAPHY */
+
+.comfortaa {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: bold;
+}
+
+.raleway{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: medium;
+}
+
+.nunito-normal{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+
+.nunito-bold {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: bold;
+}
+
+
+.playfair-display{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: bold;
+}
+
+h1{
+    font-size: 64px;
+    font-family: Playfair Display;
+    font-weight: bold;
+}
+
+h4{
+    font-size: 20px
+}
+
+h2{
+    font-size: 48px;
+}
+
+h3{
+    font-size: 40px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    border-bottom: 1px solid #25282B;
+    color: white;
+}
+
+p{
+    font-size: 18px;
+}
+
+
+/** COMPONENTS **/
+/*HEADER*/
+.main-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+}
+
+.main-header .left-container {
+    width: 30%;
+    font-family: 'Comfortaa';
+    font-weight: bold;
+}
+
+.main-header .right-container {
+    width: 30%;
+}
+
+.menu-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu-list-item a{
+    font-family: 'Raleway';
+    font-weight: medium;
+    font-size: 18px;
+}
+
+/*FOOTER*/
+.main-footer{
+    padding: 100px 20px;
+}
+.footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+.footer-socials{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+.btn{
+    border: 1px solid #25282B!important;
+    border-radius: 8px;
+    padding: 2% 5%
+}
+
+.primary-btn{
+    background-color: #FDC435;
+    border: 1px solid #FDC435!important;
+}
+
+.primary-btn:hover, .secondary-btn:hover{
+    background-color: #25282B;
+    border: 1px solid #25282B!important;
+    color: white;
+}
+
+.project-btn{
+    border-radius: 24px;
+    font-family: Nunito !important;
+    font-weight: bold;
+}
+
+
+
+/** BODY **/
+
+.main-hero{
+    padding: 5%;
+    max-width: 500px;
+}
+
+.hero-subtitle{
+    color: #FDC435;
+    font-family: Nunito;
+    font-weight: bold;
+}
+
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-projects{
+
+    padding: 10%;
+    text-align: center;
+}
+
+
+.project-line{
+    display: inline-block;
+    width: 100px!important;
+    border-bottom: 1px solid #FDC435;
+    margin-bottom: 100px;
+}
+
+.project-wrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px
+}
+
+.project-list{
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    justify-content: center;
+    border-radius: 24px;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/**PROJECTS 1&3 **/
+.project-odd-left, .project-even-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: white;
+    padding: 5%;
+    width: 50%;
+    text-align: left;
+}
+
+.project-odd-left h3, .project-even-right h3{
+    font-family: Playfair Display;
+    font-weight: bold;
+}
+
+.project-odd-left p, .project-even-right p{
+    color: #828282;
+    font-family: Nunito;
+    font-weight: normal;
+}
+
+.project-odd-right{
+    width: 63% !important;
+    padding: 0;
+    background-image: url('../img/project-img-01.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/** PROJECTT 2 **/
+.project-even-left{
+    width: 63% !important;
+    padding: 0;
+    background-image: url('../img/project-img-02.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/**PROJECT 3 **/
+.project-odd-right.project-03{
+    background-image: url('../img/project-img-03.jpg');
+}
+
+
+/**RESPONSIVENESS **/
+@media only screen and (max-width: 1023px){
+    .project-list{
+        flex-wrap: wrap;
+    }
+    .project-odd{
+        flex-wrap: wrap-reverse;
+    }
+    .project-wrapper div{
+        width: 100%!important;
+    }
+}
